@@ -1,4 +1,7 @@
-'''
+#BELOW ARE THE 3 METHODS METHODS TO FIND A PAIR OF SUM OF A GIVE NUMER IN AN ARRAY   
+
+#method_01................................................................................................................
+
 def findPair(A, sum):
    for i in range(len(A) - 1):
        for j in range(i + 1, len(A)):
@@ -7,10 +10,9 @@ def findPair(A, sum):
 A = [8, 7, 5, 2, 5, 3, 1]
 sum = 10
 findPair(A, sum)
-'''
 
+#method_02.................................................................................................................
 
-'''
 def findPair(A, sum):
 	A.sort()
 	(low, high) = (0, len(A) - 1)
@@ -25,13 +27,12 @@ def findPair(A, sum):
 A = [8, 7, 2, 5, 3, 1]
 sum = 10
 findPair(A, sum)
-'''
 
+#method_03...................................................................................................................
 
-'''
 def findPair(A, sum):
 	dict = {}
-	for i, e in enumerate(A):
+	for i, e i n enumerate(A):
 		if sum - e in dict:
 			print("Pair found at index", dict.get(sum - e), "and", i)
 		dict[e] = i
@@ -40,4 +41,3 @@ def findPair(A, sum):
 A = [8, 7, 2, 5, 3, 1]
 sum = 10
 findPair(A, sum)
-'''
